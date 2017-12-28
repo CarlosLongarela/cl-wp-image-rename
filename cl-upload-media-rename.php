@@ -7,7 +7,7 @@
  * @wordpress-plugin
  * Plugin Name:       CL Upload Media Rename
  * Plugin URI:        https://tabernawp.com/
- * Description:       Sanitize media file names on upload and set ALT for imgae with previous file name.
+ * Description:       Sanitize media file names on upload and set ALT for image with previous file name.
  * Version:           0.1.0
  * Author:            Carlos Longarela
  * Author URI:        https://tabernawp.com/
@@ -65,10 +65,10 @@ add_filter( 'sanitize_file_name', 'cl_uir_file_name', 10, 2 );
  */
 function cl_uir_alt_after_post_meta( $meta_id, $post_id, $meta_key, $meta_value ) {
 	if ( '_wp_attachment_metadata' === $meta_key ) {
-		$titulo = get_the_title( $post_id ); // Get file title.
+		$title = get_the_title( $post_id ); // Get file title.
 
 		// Update ALT text.
-		update_post_meta( $post_id, '_wp_attachment_image_alt', $titulo );
+		update_post_meta( $post_id, '_wp_attachment_image_alt', $title );
 	}
 }
 add_action( 'added_post_meta', 'cl_uir_alt_after_post_meta', 10, 4 );
