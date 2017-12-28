@@ -7,14 +7,13 @@
  * @wordpress-plugin
  * Plugin Name:       CL Upload Media Rename
  * Plugin URI:        https://tabernawp.com/
- * Description:       Plugin for sanitize media file names on upload and set ALT for imgae with previous file name.
+ * Description:       Sanitize media file names on upload and set ALT for imgae with previous file name.
  * Version:           0.1.0
  * Author:            Carlos Longarela
  * Author URI:        https://tabernawp.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       cl-upload-media-rename
- * Domain Path:       /languages
  */
 
 // If this file is called directly, abort.
